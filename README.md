@@ -33,3 +33,16 @@
     Chịu trách nhiệm về mạng và định tuyến lưu lượng đến các Pod. Nó quản lý các quy tắc mạng và đảm bảo rằng các dịch vụ có thể được truy cập từ bên ngoài.
   - Container Runtime:
     Là phần mềm chạy container, ví dụ như Docker hoặc containerd. Nó chịu trách nhiệm tạo và quản lý các container trên Worker Node.
+    
+![image](https://github.com/user-attachments/assets/d4468135-ed09-424a-b08c-4be791bd3353)
+
+## Settings
+
+Minikube for linux:
+    `curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+     sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64`
+Vertual Box:
+
+Start your cluster
+   ` minikube start --driver=virtualbox `
+
