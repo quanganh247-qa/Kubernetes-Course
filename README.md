@@ -9,4 +9,5 @@
 
 ## POD
   - POD is the smallest unit in the k8s world
-    ![image](https://github.com/user-attachments/assets/4875bb1b-f49f-4b0e-92e3-75d003ff1f43)
+    
+![image](https://github.com/user-attachments/assets/4875bb1b-f49f-4b0e-92e3-75d003ff1f43)
