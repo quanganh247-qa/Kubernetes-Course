@@ -56,6 +56,11 @@ SSH mode:
     
   If you set `--driver=docker` you should use `minikube ssh` because `ssh docker@<minikube IP>` will not work.
 
-  Minikube node user credentials:
-      `Username: docker
-      Password: tcuser`
+  Minikube node user credentials: `Username: docker Password: tcuser`
+
+- Get PODS by namespaces:   ` kubectl get pods --namespace=kube-system `
+- To create Pods using  :   ` kubectl run test-cluster --image=nginx   `
+- Connect with container:   ` docker exec -it 29d9038fe23c sh `
+  hostname: `test-cluster`
+  hostname -i: `10.244.0.3 `
+  `curl 10.244.0.3`
