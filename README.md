@@ -75,4 +75,9 @@ A Deployment is the most common way to manage and scale the number of pods in Ku
   - Ensure consistency: All the pods in a Deployment are identical, meaning they are created using the same configuration and run the same container image.
 
 - Create deployment by using ` k create deployment nginx-deplyment --image=nginx `
-- 
+- Scale pods by using `k scale deployment nginx-deplyment --replicas=5 `
+- If u want to access pod , we will need to access NODE by using `minikube ssh` 
+
+## Services
+- If you want to allow external access , you will use service to manange external IP . By using `  k expose deployment nginx-deplyment --port=8080 --target-port=80 `
+- Cluster IP is only available inside of the K8s clusters
