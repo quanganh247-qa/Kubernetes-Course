@@ -44,5 +44,9 @@ Minikube for linux:
 Vertual Box:
 
 Start your cluster
-   ` minikube start --driver=virtualbox `
+   ` minikube start --driver=docker `
+Get IP
+   ` minikube ip `
+SSH mode:
+  ![image](https://github.com/user-attachments/assets/fbacf3eb-2a0f-4797-8251-bc1d9d14855c)
 
