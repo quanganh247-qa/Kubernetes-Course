@@ -61,6 +61,18 @@ SSH mode:
 - Get PODS by namespaces:   ` kubectl get pods --namespace=kube-system `
 - To create Pods using  :   ` kubectl run test-cluster --image=nginx   `
 - Connect with container:   ` docker exec -it 29d9038fe23c sh `
-  hostname: `test-cluster`
-  hostname -i: `10.244.0.3 `
-  `curl 10.244.0.3`
+- Get hostname: `test-cluster`
+- Get IP using hostname -i: `10.244.0.3 `
+- Inspect page : `curl 10.244.0.3`
+- Set alias: `alias k="kubectl"`
+
+## Deployments 
+A Deployment is the most common way to manage and scale the number of pods in Kubernetes. With a Deployment, you can:
+
+  - Create and manage pods: A Deployment ensures that the specified number of identical pods are running at any given time.
+  - Scale pods: You can easily increase or decrease the number of replicas (pods) managed by the Deployment.
+  - Update configurations: You can modify the configuration of the pods, including container images, environment variables, and more. Kubernetes will automatically handle rolling updates to ensure minimal downtime.
+  - Ensure consistency: All the pods in a Deployment are identical, meaning they are created using the same configuration and run the same container image.
+
+- Create deployment by using ` k create deployment nginx-deplyment --image=nginx `
+- 
