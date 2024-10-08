@@ -49,10 +49,12 @@ Get IP
    ` minikube ip `
 SSH mode:
   `NOTE`
-  SSH is a standard protocol for management of any servers (including remote servers)
+  SSH is a standard protocol for management of any servers (including remote servers).
+  
   But Minikube also provides command to SSH into the local minikube node
     ` minikube ssh `
-  If you set `--driver=docker` you should use `minikube ssh` because `ssh docker@<minikube IP>` will not work
+    
+  If you set `--driver=docker` you should use `minikube ssh` because `ssh docker@<minikube IP>` will not work.
 
   Minikube node user credentials:
       `Username: docker
