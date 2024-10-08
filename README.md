@@ -48,8 +48,12 @@ Start your cluster
 Get IP
    ` minikube ip `
 SSH mode:
+  `NOTE`
+  SSH is a standard protocol for management of any servers (including remote servers)
+  But Minikube also provides command to SSH into the local minikube node
+    ` minikube ssh `
+  If you set `--driver=docker` you should use `minikube ssh` because `ssh docker@<minikube IP>` will not work
 
-  ![image](https://github.com/user-attachments/assets/fbacf3eb-2a0f-4797-8251-bc1d9d14855c)
-  
-  ![image](https://github.com/user-attachments/assets/ec891256-fab4-4606-b0a2-ff7313d5bb35)
-
+  Minikube node user credentials:
+      `Username: docker
+      Password: tcuser`
