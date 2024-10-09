@@ -92,4 +92,5 @@ A Deployment is the most common way to manage and scale the number of pods in Ku
 3.   Creating NodePort Service ` k expose deployment <deployment-name>  --type=NodePort --port=3000`
 4.   Accessing NodePort service ` minikube service <deployment-name> `
 5.   ` k expose deployment k8s-web-hello --type=LoadBalancer --port=3000 `
-6.   If you want to roll out the new version withour any interuption of service -> use strategy type is `RollingUpdate`. The new pod will be replaced one by one and the old pod will be still running. 
+6.   If you want to roll out the new version withour any interuption of service -> use strategy type is `RollingUpdate`. The new pod will be replaced one by one and the old pod will be still running.
+7.   `docker build . -t huuquanganhdinh573/k8s-web-hello:2.0.0` -> `docker push huuquanganhdinh573/k8s-web-hello:2.0.0`
