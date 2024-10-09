@@ -84,9 +84,11 @@ A Deployment is the most common way to manage and scale the number of pods in Ku
 - Cluster IP is only available inside of the K8s clusters
 
 ----------------------------------------------------------------------------------------
+![image](https://github.com/user-attachments/assets/39ae0ead-1693-4938-960d-8d1e74da11c9)
+
 # All of step to deploy docker image
 1.   `k expose deployment <deployment-name> --port=<port-pod>`
 2.   Scaling custom image deployment `k scale deployment <deployment-name> --replicas=<number>`
 3.   Creating NodePort Service ` k expose deployment <deployment-name>  --type=NodePort --port=3000`
 4.   Accessing NodePort service ` minikube service <deployment-name> `
-5.   
+5.   ` k expose deployment k8s-web-hello --type=LoadBalancer --port=3000 `
