@@ -85,4 +85,5 @@ A Deployment is the most common way to manage and scale the number of pods in Ku
 
 ----------------------------------------------------------------------------------------
 # All of step to deploy docker image
-1.   
+1.   `k expose deployment <deployment-name> --port=<port-pod>`
+2.   Scaling custom image deployment `k scale deployment <deployment-name --replicas=<number>`
