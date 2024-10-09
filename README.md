@@ -76,8 +76,13 @@ A Deployment is the most common way to manage and scale the number of pods in Ku
 
 - Create deployment by using ` k create deployment nginx-deplyment --image=nginx `
 - Scale pods by using `k scale deployment nginx-deplyment --replicas=5 `
-- If u want to access pod , we will need to access NODE by using `minikube ssh` 
+- If u want to access pod , we will need to access NODE by using `minikube ssh`
+- Creating deployment based on the custom Docker image ` k create deployment k8-web-hello --image=huuquanganhdinh573/k8s-web-hello `
 
 ## Services
 - If you want to allow external access , you will use service to manange external IP . By using `  k expose deployment nginx-deplyment --port=8080 --target-port=80 `
 - Cluster IP is only available inside of the K8s clusters
+
+----------------------------------------------------------------------------------------
+# All of step to deploy docker image
+1.   
