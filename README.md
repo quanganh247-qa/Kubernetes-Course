@@ -96,3 +96,5 @@ A Deployment is the most common way to manage and scale the number of pods in Ku
 7.   `docker build . -t huuquanganhdinh573/k8s-web-hello:2.0.0` -> `docker push huuquanganhdinh573/k8s-web-hello:2.0.0`
 8.   Updating imgae in pod `k set image deployment k8s-web-hello k8s-web-hello=huuquanganhdinh573/k8s-web-hello:2.0.0`
 9.   CKing status by using  ` k rollout status deployment k8s-web-hello`
+
+![image](https://github.com/user-attachments/assets/7a69bf3d-cc4f-4d53-a4ad-a60d73fc8b57)
