@@ -100,3 +100,5 @@ A Deployment is the most common way to manage and scale the number of pods in Ku
 ![image](https://github.com/user-attachments/assets/7a69bf3d-cc4f-4d53-a4ad-a60d73fc8b57)
 A DNS lookup (Domain Name System lookup) is the process of translating a domain name (like example.com or nginx) into its corresponding IP address (e.g., 192.168.1.1
 - ` k exec k8s-web-to-nginx-6d4c878bd9-96hhk -- nslookup nginx ` : we tried to reso lve nginx name from inside of the container which belongs to this pod 
+
+`minikube start --driver=hyper-v --container-runtime=cri-o`
